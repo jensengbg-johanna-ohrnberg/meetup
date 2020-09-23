@@ -3,8 +3,12 @@ import Vuex from "vuex";
 
 Vue.use(Vuex);
 
+import data from '../data/data.json'
+
 export default new Vuex.Store({
-  state: {},
+  state: {
+    meetUpList: data
+  },
   mutations: {},
   actions: {},
   modules: {}

@@ -1,32 +1,37 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link class="home-button" to="/">Home</router-link>
+      <router-link class="reviews-button" to="/reviews">Reviews</router-link>
     </div>
     <router-view />
   </div>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+  #app {
+    background-color: #560A86;
+    padding: 1em;
   }
-}
+
+  #nav {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-direction: row;
+  }
+
+  #nav > .home-button, .reviews-button {
+    padding: 1em;
+    font-size: 1.5em;
+  }
+
+  #nav > .home-button:hover, .reviews-button:hover {
+    color: #D4A437;
+  }
+
+  .home-button, .reviews-button {
+    color: #FFACFC;
+    text-decoration: none;
+  }
 </style>
