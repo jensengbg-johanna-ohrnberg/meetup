@@ -1,6 +1,6 @@
 <template>
   <div class="event-single">
-    <section class="hero has-background-info-light">
+    <section class="hero has-background-info">
       <div class="hero-body">
         <div class="container">
           <h1 class="title">
@@ -13,20 +13,28 @@
             <br>
             <strong>Price:</strong> {{ event.price }} kr
           </h2>
-          <JoinEvent :event="event" @joined-submitted="joinEvent" />
         </div>
       </div>
     </section>
-    <div>
-        <h2>Participants</h2>
-        <p v-if="!joined.length">There are no participants yet.</p>
-        <ul>
+    <div class="event-single">
+    <section class="hero has-background-info-light">
+      <div class="hero-body">
+        <div class="container">
+          <JoinEvent :event="event" @joined-submitted="joinEvent" />
+        </div>
+        <div>
+          <h2>Participants</h2>
+          <p v-if="!joined.length">There are no participants yet.</p>
+          <ul>
             <li v-for="join in joined" :key="join.name">
-                <p>Name: {{ join.name }}</p>
-                <p>Age: {{ join.age }}</p>
-                <p>Level: {{ join.level }}</p>
+              <p>Name: {{ join.name }}</p>
+              <p>Age: {{ join.age }}</p>
+              <p>Level: {{ join.level }}</p>
             </li>
-        </ul>
+          </ul>
+        </div>
+      </div>
+    </section>
     </div>
     <section class="event-content">
       <div class="container">

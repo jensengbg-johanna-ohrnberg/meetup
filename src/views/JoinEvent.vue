@@ -18,7 +18,7 @@
                         <p class="margin">
                             <label class="subtitle level" for="level">Level</label>
                             <select class="select is-link" id="level" v-model="level" required>
-                                <option>Pro</option>
+                                <option>Professional</option>
                                 <option>Intermediate</option>
                                 <option>Beginner</option>
                             </select>
