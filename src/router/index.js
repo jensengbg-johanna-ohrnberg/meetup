@@ -1,20 +1,33 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
-import Reviews from "../views/Reviews.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/",
-    name: "Home",
-    component: Home
+    path: '/',
+    name: 'home',
+    component: () => import('../views/Home.vue')
   },
   {
-    path: "/reviews",
-    name: "Reviews",
-    component: Reviews
+    path: '/about',
+    name: 'about',
+    component: () => import('../views/About.vue')
+  },
+  {
+    path: '/event/:id',
+    name: 'eventSingle',
+    component: () => import('../views/EventSingle.vue'),
+  },
+  {
+    path: '/addreview/:id',
+    name: 'addreview',
+    component: () => import('../views/AddReview.vue')
+  },
+  {
+    path: '/joinevent/:id',
+    name: 'joinevent',
+    component: () => import('../views/JoinEvent.vue')
   }
 ];
 

@@ -1,158 +1,100 @@
-[
+{
+  "events": [
     {
-        "id": 1,
-        "img": "https://images.unsplash.com/photo-1570498839593-e565b39455fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-        "name": "Soccer for fun",
-        "type": "Soccer",
-        "level": "All levels",
-        "date": "21 October, 2020",
-        "starttime": "1 pm",
-        "place": "Tingbergsvallen",
-        "city": "Kungsbacka",
-        "country": "Sweden",
-        "price": 100
+      "id": 1,
+      "name": "Soccer for fun",
+      "category": "Soccer",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus veritatis provident tempora dignissimos aperiam natus perspiciatis ad dolore similique minima quam facilis quis itaque ratione ab, aliquam omnis animi id!",
+      "featuredImage": "https://images.unsplash.com/photo-1544698310-74ea9d1c8258?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "images": [
+        "https://images.unsplash.com/photo-1540753003857-32db1552eead?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1556476874-c98062c7027a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1544698310-74ea9d1c8258?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+      ],
+      "location": "Tingbergsvallen, Kungsbacka",
+      "date": "21-10-2020",
+      "time": "13:00",
+      "price": 100
     },
     {
-        "id": 2,
-        "img": "https://images.unsplash.com/photo-1581275645280-1f80c9bd3146?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-        "name": "Ice Hockey for fun",
-        "type": "Ice Hockey",
-        "level": "All levels",
-        "date": "3 December, 2020",
-        "starttime": "7 pm",
-        "place": "Frölundaborg",
-        "city": "Gothenburg",
-        "country": "Sweden",
-        "price": 200
+      "id": 2,
+      "name": "Ice Hockey for fun",
+      "category": "Ice Hockey",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus veritatis provident tempora dignissimos aperiam natus perspiciatis ad dolore similique minima quam facilis quis itaque ratione ab, aliquam omnis animi id!",
+      "featuredImage": "https://images.unsplash.com/photo-1581275645280-1f80c9bd3146?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "images": [
+        "https://images.unsplash.com/photo-1581275645280-1f80c9bd3146?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1581275645280-1f80c9bd3146?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1581275645280-1f80c9bd3146?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+      ],
+      "location": "Frölundaborg, Gothenburg",
+      "date": "03-12-2020",
+      "time": "19:00",
+      "price": 200
     },
     {
-        "id": 3,
-        "img": "https://images.unsplash.com/photo-1536818968680-deeec2e9fd11?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-        "name": "Game Night",
-        "type": "E-Games",
-        "level": "Intermediate",
-        "date": "5 December, 2020",
-        "starttime": "8 pm",
-        "place": "Aranäs Gymnasiet",
-        "city": "Kungsbacka",
-        "country": "Sweden",
-        "price": 350
+      "id": 3,
+      "name": "Game Night",
+      "category": "E-Games",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus veritatis provident tempora dignissimos aperiam natus perspiciatis ad dolore similique minima quam facilis quis itaque ratione ab, aliquam omnis animi id!",
+      "featuredImage": "https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "images": [
+        "https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+      ],
+      "location": "Aranäsgymnasiet, Kungsbacka",
+      "date": "05-12-2020",
+      "time": "20:00",
+      "price": 350
     },
     {
-        "id": 4,
-        "img": "https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-        "name": "Book night for nerds",
-        "type": "Book Club",
-        "level": "All levels",
-        "date": "29 November, 2020",
-        "starttime": "10 pm",
-        "place": "Svenska Mässan",
-        "city": "Gothenburg",
-        "country": "Sweden",
-        "price": 100
+      "id": 4,
+      "name": "Book night for nerds",
+      "category": "Book Club",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus veritatis provident tempora dignissimos aperiam natus perspiciatis ad dolore similique minima quam facilis quis itaque ratione ab, aliquam omnis animi id!",
+      "featuredImage": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "images": [
+        "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+      ],
+      "location": "Svenska Mässan, Gothenburg",
+      "date": "29-11-2020",
+      "time": "19:00",
+      "price": 100
     },
     {
-        "id": 5,
-        "img": "https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-        "name": "LAAN",
-        "type": "E-Games",
-        "level": "Hard",
-        "date": "3 October, 2020 - 6 October, 2020",
-        "starttime": "5 pm",
-        "place": "Globen",
-        "city": "Stockholm",
-        "country": "Sweden",
-        "price": 250
+      "id": 5,
+      "name": "LAAN",
+      "category": "E-Games",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus veritatis provident tempora dignissimos aperiam natus perspiciatis ad dolore similique minima quam facilis quis itaque ratione ab, aliquam omnis animi id!",
+      "featuredImage": "https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "images": [
+        "https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+      ],
+      "location": "Globen, Stockholm",
+      "date": "03-10-2020 - 06-10-2020",
+      "time": "17:00",
+      "price": 250
     },
     {
-        "id": 6,
-        "img": "https://images.unsplash.com/photo-1599518333229-8d0681f62323?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-        "name": "Harry Potter Chat",
-        "type": "Book Club",
-        "level": "All levels",
-        "date": "3 October, 2020 - 6 October, 2020",
-        "starttime": "5 pm",
-        "place": "Globen",
-        "city": "Stockholm",
-        "country": "Sweden",
-        "price": 150
-    },
-    {
-        "id": 7,
-        "img": "https://images.unsplash.com/photo-1430825803925-53e62bb14db1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-        "name": "Horse Back Riding",
-        "type": "Horse Riding",
-        "level": "Easy",
-        "date": "2 April, 2021",
-        "starttime": "8 am",
-        "place": "Nordhallands Ridklubb",
-        "city": "Lerkil",
-        "country": "Sweden",
-        "price": 200
-    },
-    {
-        "id": 8,
-        "img": "https://images.unsplash.com/photo-1513593771513-7b58b6c4af38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-        "name": "Hönsaryd Runt",
-        "type": "Jogging",
-        "level": "Intermediate",
-        "date": "25 September, 2020",
-        "starttime": "6 pm",
-        "place": "Hönsaryd",
-        "city": "Kungsbacka",
-        "country": "Sweden",
-        "price": 0
-    },
-    {
-        "id": 9,
-        "img": "https://images.unsplash.com/photo-1562694909-3d53309d5e14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-        "name": "Dance All Night Long",
-        "type": "Pleasure",
-        "level": "All levels",
-        "date": "1 Oktober, 2020 - 2 Oktober",
-        "starttime": "11 pm",
-        "place": "Park Lane",
-        "city": "Gothenburg",
-        "country": "Sweden",
-        "price": 150
-    },
-    {
-        "id": 10,
-        "img": "https://images.unsplash.com/photo-1597474561103-0773c378a1fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-        "name": "Blueberry Picking",
-        "type": "Pleasure",
-        "level": "All levels",
-        "date": "20 August, 2021",
-        "starttime": "11 am",
-        "place": "Palta Slingan",
-        "city": "Vallda",
-        "country": "Sweden",
-        "price": 0
-    },
-    {
-        "id": 11,
-        "img": "https://images.unsplash.com/photo-1517247399098-25c15e012723?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-        "name": "Dog Walking",
-        "type": "Pleasure",
-        "level": "All levels",
-        "date": "25 November, 2020",
-        "starttime": "10 am",
-        "place": "Slottsskogen",
-        "city": "Gothenburg",
-        "country": "Sweden",
-        "price": 0
-    },
-    {
-        "id": 12,
-        "img": "https://images.unsplash.com/photo-1506964001924-75319510163f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-        "name": "Beach Soccer Tournament",
-        "type": "Soccer",
-        "level": "Intermediate",
-        "date": "6 July, 2021",
-        "starttime": "9 am",
-        "place": "Tylösand",
-        "city": "Halmstad",
-        "country": "Sweden",
-        "price": 50
+      "id": 6,
+      "name": "Harry Potter Chat",
+      "category": "Harry Potter",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus veritatis provident tempora dignissimos aperiam natus perspiciatis ad dolore similique minima quam facilis quis itaque ratione ab, aliquam omnis animi id!",
+      "featuredImage": "https://images.unsplash.com/photo-1570610159825-ec5d3823660c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "images": [
+        "https://images.unsplash.com/photo-1570610159825-ec5d3823660c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1570610159825-ec5d3823660c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1570610159825-ec5d3823660c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+      ],
+      "location": "Svenska Mässan, Gothenburg",
+      "date": "09-10-2020 - 14-10-2020",
+      "time": "11:00",
+      "price": 150
     }
-]
+  ]
+}
