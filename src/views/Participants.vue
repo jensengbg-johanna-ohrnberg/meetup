@@ -40,7 +40,7 @@ export default {
     joinEvent(productJoined) {
         this.joined.push(productJoined);
         localStorage.setItem('JOIN_EVENT', JSON.stringify(this.joined));
-        alert('An order confirmation will be sent to your email!');
+        alert('A confirmation will be sent to your email!');
     },
     unJoin(productJoined) {
         this.joined.splice(productJoined, 1);
