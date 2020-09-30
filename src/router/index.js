@@ -17,17 +17,22 @@ const routes = [
   {
     path: '/event/:id',
     name: 'eventSingle',
-    component: () => import('../views/EventSingle.vue'),
+    component: () => import('../views/EventSingle.vue')
   },
   {
-    path: '/addreview/:id',
-    name: 'addreview',
-    component: () => import('../views/AddReview.vue')
+    path: '/participants',
+    name: 'participants',
+    component: () => import('../views/Participants.vue')
   },
   {
-    path: '/joinevent/:id',
-    name: 'joinevent',
-    component: () => import('../views/JoinEvent.vue')
+    path: '/reviews',
+    name: 'reviews',
+    component: () => import('../views/Reviews.vue')
+  },
+  {
+    path: '/seereviews',
+    name: 'seereviews',
+    component: () => import('../views/SeeReviews.vue')
   }
 ];
 

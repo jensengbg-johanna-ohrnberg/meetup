@@ -6,6 +6,18 @@
                     <h4 class="title">Fill Out the Form to Join the Event</h4>
                     <form @submit.prevent="onSubmit">
                         <p class="margin">
+                            <label class="subtitle level" for="level">Event</label>
+                            <select class="select is-link" id="level" v-model="events" required>
+                                <option>Soccer for Fun</option>
+                                <option>Ice Hockey for Fun</option>
+                                <option>Game Night</option>
+                                <option>Book Night for Nerds</option>
+                                <option>LAAN</option>
+                                <option>Harry Potter Chat</option>
+                            </select>
+                        </p>
+
+                        <p class="margin">
                             <label class="subtitle" for="name">Name</label>
                             <input class="input is-link" id="name" v-model="name" placeholder="name" required>
                         </p>
@@ -39,6 +51,7 @@ export default {
     ],
     data() {
         return {
+            events: null,
             name: null,
             age: null,
             level: null
@@ -47,11 +60,13 @@ export default {
     methods: {
         onSubmit() {
             let productJoined = {
+                events: this.events,
                 name: this.name,
                 age: this.age,
                 level: this.level
             }
             this.$emit('joined-submitted', productJoined)
+            this.events = null
             this.name = null
             this.review = null
             this.rating = null

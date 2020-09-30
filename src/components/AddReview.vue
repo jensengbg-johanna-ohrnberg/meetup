@@ -6,6 +6,18 @@
                     <h1 class="title">Add Review</h1>
                     <form @submit.prevent="onSubmit">
                         <p class="margin">
+                            <label class="subtitle level" for="level">Event</label>
+                            <select class="select is-link" id="level" v-model="events" required>
+                                <option>Soccer for Fun</option>
+                                <option>Ice Hockey for Fun</option>
+                                <option>Game Night</option>
+                                <option>Book Night for Nerds</option>
+                                <option>LAAN</option>
+                                <option>Harry Potter Chat</option>
+                            </select>
+                        </p>
+
+                        <p class="margin">
                             <label class="subtitle" for="name">Name</label>
                             <input class="input is-link" id="name" v-model="name" placeholder="name" required>
                         </p>
@@ -41,6 +53,7 @@ export default {
     ],
     data() {
         return {
+            events: null,
             name: null,
             review: null,
             rating: null
@@ -49,11 +62,13 @@ export default {
     methods: {
         onSubmit() {
             let productReview = {
+                events: this.events,
                 name: this.name,
                 review: this.review,
                 rating: this.rating
             }
             this.$emit('review-submitted', productReview)
+            this.events = null
             this.name = null
             this.review = null
             this.rating = null

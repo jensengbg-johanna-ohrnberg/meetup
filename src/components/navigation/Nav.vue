@@ -9,6 +9,8 @@
     <div class="navbar-start">
       <router-link to="/" class="navbar-item">Home</router-link>
       <router-link to="/about" class="navbar-item">About</router-link>
+      <router-link to="/participants" class="navbar-item">Join Events</router-link>
+      <router-link to="/seereviews" class="navbar-item">Reviews</router-link>
     </div>
   </div>
 </nav>

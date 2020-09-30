@@ -5,7 +5,9 @@ describe('Nav', () => {
     it('should go to another route when clicked on', () => {
         const $route = {
             path: '/',
-            pathAbout: '/about'
+            pathAbout: '/about',
+            pathParticipants: '/participants',
+            pathReviews: '/seeReviews'
         }
         const wrapper = shallowMount(Nav, {
             stubs: ['router-link', 'router-view'],
@@ -18,5 +20,7 @@ describe('Nav', () => {
 
         wrapper.vm.$route.path
         wrapper.vm.$route.pathAbout
+        wrapper.vm.$route.pathParticipants
+        wrapper.vm.$route.pathReviews
     })
 })

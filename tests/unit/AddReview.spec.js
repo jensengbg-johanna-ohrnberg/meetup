@@ -1,5 +1,5 @@
 import { shallowMount, mount } from '@vue/test-utils'
-import AddReview from '@/views/AddReview.vue'
+import AddReview from '@/components/AddReview.vue'
 
 describe('AddReview', () => {
     it('should submit review when button is clicked', async () => {
@@ -13,6 +13,15 @@ describe('AddReview', () => {
         let emitted = submitBtn.exists(wrapper.emitted('review-submitted'))
 
         expect(emitted).toBe(expected)
+    })
+
+    it('should show rating when selected', async () => {
+        const wrapper = mount(AddReview)
+        const options = wrapper.find('select').findAll('option')
+
+        await options.at(2).setSelected()
+
+        expect(wrapper.find('option:checked').element.value).toBe('Game Night')
     })
 
     it('should show the users name on input', async () => {
@@ -37,14 +46,5 @@ describe('AddReview', () => {
         input.element.value = newValue
 
         await input.trigger('change')
-    })
-
-    it('should show rating when selected', async () => {
-        const wrapper = mount(AddReview)
-        const options = wrapper.find('select').findAll('option')
-
-        await options.at(1).setSelected()
-
-        expect(wrapper.find('option:checked').element.value).toBe('4')
     })
 })

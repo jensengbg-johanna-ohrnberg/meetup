@@ -13,29 +13,10 @@
             <br>
             <strong>Price:</strong> {{ event.price }} kr
           </h2>
+          <button class="button is-dark" @click="signUp">Sign Up for Event</button>
         </div>
       </div>
     </section>
-    <div class="event-single">
-    <section class="hero has-background-info-light">
-      <div class="hero-body">
-        <div class="container">
-          <JoinEvent :event="event" @joined-submitted="joinEvent" />
-        </div>
-        <div>
-          <h2>Participants</h2>
-          <p v-if="!joined.length">There are no participants yet.</p>
-          <ul>
-            <li v-for="join in joined" :key="join.name">
-              <p>Name: {{ join.name }}</p>
-              <p>Age: {{ join.age }}</p>
-              <p>Level: {{ join.level }}</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    </div>
     <section class="event-content">
       <div class="container">
         <p class="is-size-4 description">{{ event.description }}</p>
@@ -48,31 +29,13 @@
         </div>
       </div>
     </section>
-    <AddReview :event="event" @review-submitted="addReview" />
-    <div>
-        <h2>Reviews</h2>
-        <p v-if="!reviews.length">There are no reviews yet.</p>
-        <ul>
-            <li v-for="review in reviews" :key="review.name">
-                <p>Name: {{ review.name }}</p>
-                <p>Rating: {{ review.rating }}</p>
-                <p>Review: {{ review.review }}</p>
-            </li>
-        </ul>
-    </div>
   </div>
 </template>
 
 <script>
 import data from '../data/data.json'
-import AddReview from '../views/AddReview'
-import JoinEvent from '../views/JoinEvent'
 export default {
   name: 'EventSingle',
-  components: {
-      AddReview,
-      JoinEvent
-  },
   data () {
     return {
         events: data.events,
@@ -87,12 +50,9 @@ export default {
     this.event = event;
   },
   methods: {
-      addReview(productReview) {
-          this.reviews.push(productReview)
-      },
-      joinEvent(productJoined) {
-          this.joined.push(productJoined)
-      }
+    signUp() {
+      this.$router.push({ name: 'participants' });
+    }
   }
 }
 </script>

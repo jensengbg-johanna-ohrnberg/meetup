@@ -2,7 +2,7 @@
   "events": [
     {
       "id": 1,
-      "name": "Soccer for fun",
+      "name": "Soccer for Fun",
       "category": "Soccer",
       "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus veritatis provident tempora dignissimos aperiam natus perspiciatis ad dolore similique minima quam facilis quis itaque ratione ab, aliquam omnis animi id!",
       "featuredImage": "https://images.unsplash.com/photo-1544698310-74ea9d1c8258?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
@@ -18,7 +18,7 @@
     },
     {
       "id": 2,
-      "name": "Ice Hockey for fun",
+      "name": "Ice Hockey for Fun",
       "category": "Ice Hockey",
       "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus veritatis provident tempora dignissimos aperiam natus perspiciatis ad dolore similique minima quam facilis quis itaque ratione ab, aliquam omnis animi id!",
       "featuredImage": "https://images.unsplash.com/photo-1581275645280-1f80c9bd3146?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
@@ -50,7 +50,7 @@
     },
     {
       "id": 4,
-      "name": "Book night for nerds",
+      "name": "Book Night for Nerds",
       "category": "Book Club",
       "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus veritatis provident tempora dignissimos aperiam natus perspiciatis ad dolore similique minima quam facilis quis itaque ratione ab, aliquam omnis animi id!",
       "featuredImage": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",

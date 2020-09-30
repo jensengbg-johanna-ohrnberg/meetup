@@ -1,5 +1,5 @@
 import { shallowMount, mount } from '@vue/test-utils'
-import JoinEvent from '@/views/JoinEvent.vue'
+import JoinEvent from '@/components/JoinEvent.vue'
 
 describe('JoinEvent', () => {
     it('should submit event when button is clicked', async () => {
@@ -13,6 +13,15 @@ describe('JoinEvent', () => {
         let emitted = submitBtn.exists(wrapper.emitted('joined-submitted'))
 
         expect(emitted).toBe(expected)
+    })
+
+    it('should show event when selected', async () => {
+        const wrapper = mount(JoinEvent)
+        const options = wrapper.find('select').findAll('option')
+
+        await options.at(1).setSelected()
+
+        expect(wrapper.find('option:checked').element.value).toBe('Ice Hockey for Fun')
     })
 
     it('should show the users name on input', async () => {
@@ -41,14 +50,5 @@ describe('JoinEvent', () => {
         await input.trigger('change')
 
         expect(newValue).toBe('Updated value')
-    })
-
-    it('should show level when selected', async () => {
-        const wrapper = mount(JoinEvent)
-        const options = wrapper.find('select').findAll('option')
-
-        await options.at(1).setSelected()
-
-        expect(wrapper.find('option:checked').element.value).toBe('Intermediate')
     })
 })
