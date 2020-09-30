@@ -23,6 +23,11 @@
                         </p>
 
                         <p class="margin">
+                            <label class="subtitle" for="name">Email</label>
+                            <input class="input is-link" id="name" v-model="email" placeholder="email" required>
+                        </p>
+
+                        <p class="margin">
                             <label class="subtitle" for="age">Age</label>
                             <input class="input is-link" id="age" v-model.number="age" placeholder="age" required>
                         </p>
@@ -53,6 +58,7 @@ export default {
         return {
             events: null,
             name: null,
+            email: null,
             age: null,
             level: null
         }
@@ -62,12 +68,14 @@ export default {
             let productJoined = {
                 events: this.events,
                 name: this.name,
+                email: this.email,
                 age: this.age,
                 level: this.level
             }
             this.$emit('joined-submitted', productJoined)
             this.events = null
             this.name = null
+            this.email = null
             this.review = null
             this.rating = null
         }

@@ -7,6 +7,7 @@
             <li v-for="join in joined" :key="join.name">
                 <p>Event: {{ join.events }}</p>
                 <p>Name: {{ join.name }}</p>
+                <p>Email: {{ join.email }}</p>
                 <p>Age: {{ join.age }}</p>
                 <p>Level: {{ join.level }}</p>
                 <button class="button is-dark" @click="unJoin">UnJoin</button>
@@ -39,6 +40,7 @@ export default {
     joinEvent(productJoined) {
         this.joined.push(productJoined);
         localStorage.setItem('JOIN_EVENT', JSON.stringify(this.joined));
+        alert('An order confirmation will be sent to your email!');
     },
     unJoin(productJoined) {
         this.joined.splice(productJoined, 1);

@@ -1,0 +1,13 @@
+Länk till Github repo: https://github.com/jensengbg-johanna-ohrnberg/meetup
+
+Molntjänst: Heroku
+
+Länk till den publicerade appen: https://join-meetup.herokuapp.com/
+
+Level ups: inga
+
+Reflektion av kursinnehållet: Jag tycker att det viktigaste var att lära sig docker
+                                och hur man publicerar hemsidan/appen så att andra kan se den.
+                                Utöver det tycker jag att testning är viktigt,
+                                testningen är inte lika rolig att göra men den underlättar när man börjar själva kodandet.
+
